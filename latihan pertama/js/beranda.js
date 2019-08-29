@@ -171,7 +171,7 @@ function getClasses(){
                     <div class="juduldiv">
                         <span style="color: black; font-family: Verdana,Arial,Helvetica,Georgia; font-size: 20px;"><a href="class.html?id=${response[i].classid}">${response[i].classname}</a></span>
                     </div>
-                    <p>Andri Pramana</p>
+                    <br>
                     <div>
                         <img src="../asset/images.jpg" alt=""height="100px">
                     </div>
@@ -189,3 +189,10 @@ function getClasses(){
     })
 }
 getClasses()
+function openside() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+  function closeside() {
+    document.getElementById("mySidebar").style.width = "0";
+  }

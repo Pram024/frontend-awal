@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="../asset/iconGC.jpg">
 </head>
-<body>
-    
+<body> 
+        <!-- style="display:none" -->
+    <div class="sidenav"  id="mySidebar">
+        <a href="beranda.html" >Beranda</a>
+        <a href="#" >Logout</a>
+      </div>
     <nav> 
-        <div class="iconkiri">
+        <div class="iconkiri" onclick="openside()" >
             <i class="fa fa-bars" aria-hidden="true"><a href=""></a></i>
         </div> 
         <div class="google" > 
@@ -36,7 +40,7 @@
                 </div>
     </nav>
     <hr>
-    <div class="container">
+    <div class="container" onclick="closeside()">
         <!-- <div class="list1">
             <div class="juduldiv"><span style="color: black; font-family: Verdana,Arial,Helvetica,Georgia; font-size: 20px;"><a href="page1.html">Makers Academy</a></span></div>
             <p>Andri Pramana</p>

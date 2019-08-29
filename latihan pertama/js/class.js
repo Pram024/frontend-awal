@@ -18,7 +18,7 @@ function getClass(id){
                 <span>
                 <b>Kerjakan soal</b>: ${response.data.classwork[i].question}
                 </span> <br>
-                <textarea id="jawaban" class="komeng" type="text" placeholder="Tulis jawabanmu di sini . . ."></textarea> <br>
+                <textarea id="${response.data.classwork[i].classworkid}" class="komeng" type="text" placeholder="Tulis jawabanmu di sini . . ."></textarea> <br>
                 <input type="submit" class="tombol_login" value="Submit Jawabanmu" onclick="assignClassWork( ${response.data.classwork[i].classworkid})"> 
             </div>
                 `
@@ -38,7 +38,7 @@ var id = Number(url.searchParams.get("id"));
 getClass(id)
 // ---------------------kirim Tugas-----------------
 function assignClassWork(id){
-    var answernya = $('textarea#jawaban').val()
+    var answernya = $('textarea#' + id).val()
 
     console.log(answernya)
     kuki=getCookie("userId")
@@ -69,3 +69,10 @@ function getCookie(name) {
     }
     return null;
 }
+function openside() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+  function closeside() {
+    document.getElementById("mySidebar").style.width = "0";
+  }

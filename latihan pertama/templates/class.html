@@ -11,9 +11,13 @@
     <link rel="icon" type="image/png" href="../asset/logobiru.jpg">
 </head>
 <body>
-    <nav> 
-        <div class="iconkiri">
-            <a href="beranda.html"><i class="fa fa-bars" aria-hidden="true"><link rel="stylesheet" href="beranda.html"></i></a>
+        <div class="sidenav"  id="mySidebar">
+                <a href="beranda.html" >Beranda</a>
+                <a href="#" >Logout</a>
+              </div>
+            <nav> 
+        <div class="iconkiri" onclick="openside()" >
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </div> 
         <div class="google" > 
             <span style="color: mediumblue; font-size: 25px" >G</span>
@@ -33,7 +37,7 @@
     </nav>
     <hr>
     <div class="bpkcontainer">
-        <div class="container">
+        <div class="container" onclick="closeside()">
         
         </div>
         <div class="mid">
