@@ -1,0 +1,190 @@
+body{
+    font-family: 'Exo 2';
+    background-color: rgb(235, 235, 235)
+}
+nav{
+    margin: 10px;
+    display: flex;
+    margin-top: 20px 
+}
+div.iconkiri{
+    margin-top: 3px;
+    font-size: 20px;
+}
+div.iconkiri i:hover{
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 500ms;
+    
+}
+div.google{
+    margin-left: 10px;
+}
+div.iconmin{
+    margin-right: 30px;
+    margin-top: 6px
+}
+div.iconmin i:hover{
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 500ms;
+}
+div.iconplus{
+    margin-right: 30px;
+    margin-top: 6px;
+}
+div.iconmen img{
+    border-radius: 100px
+}
+div.bpkcontainer{
+    /* background-color: black; */
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* display: flex */
+}
+div.container{
+    /* background-color: aqua; */
+    display: flex;
+    margin-left: 91px;
+    margin-right: 116px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+/* div.blnk{   
+    background-image: url(../asset/class.png);
+    margin: -10px;
+
+} */
+div.list1{
+    background-image: url(../asset/greenboard.jpg);
+    background-size: 100%;
+    /* border-style: solid; */
+    width: 1100px;
+    height: 209px;
+    margin-left: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    color: aliceblue;
+    box-shadow: 5px 5px 9px 10px #888888;
+}
+.juduldiv a{
+    margin-left: 50px;
+    font-size: 40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.list1 a{
+    text-decoration: none;
+}
+.list1 img{
+ border-radius: 100px;
+ height: 100px;
+ margin-left: 90px;
+ margin-top: 0;
+}
+.mid{
+    border-radius: 10px;
+    padding: 10px;
+    /* border-style: groove; */
+    margin-left: 104px;
+    margin-top: 22px;
+    display: flex;
+    width: 1000px;
+}
+.boxkiri{
+    width: 17%;
+    /* height: 100%; */
+    /* border: 1pxSSSS solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    border-style: groove;
+}
+.boxkiri a.linkin{
+    margin-left: 79px;
+}
+.coment{
+    margin-left: auto;
+    width: 75%;
+    height: 110px;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: groove;
+}
+.coment textarea{
+    width: 25%;
+    height: 20px;
+    margin-top: 10px;
+    position: absolute;
+    background-color: #d8d8d8;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: width .80s ease-in-out, height .80s ease-in-out;
+}
+.coment textarea:focus{
+    width: 55%;
+    height: 50px;
+    outline: 0;
+}
+.coment input{
+    background: #7a7a7a;
+	color: rgb(255, 255, 255);
+    font-size: 6pt;
+    width: 15%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+	border-radius: 50px;
+    font-family: 'Exo 2';
+    cursor: pointer;
+    margin-top: 69px;
+}
+.coment input:hover{
+    background:#22cc22;
+	transition: all 1s;
+}
+/* -------------------------CLASSWORK------------------
+ */
+ .classworker{
+    margin-left: 336px;
+    margin-right: 118px;
+    border-style: groove;
+    border-radius: 10px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+ }
+
+ .classworker a{
+     font-size: 30px;
+ }
+ .classworker textarea{
+    height: 100px;
+    width: 450px;
+    background-color: #d8d8d8;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: width .80s ease-in-out, height .80s ease-in-out;;
+ }
+ .classworker textarea:focus{
+    height: 147px;
+    width: 741px;
+    outline: 0;
+ }
+ .classworker input{
+    background: #7a7a7a;
+	color: rgb(255, 255, 255);
+    font-size: 6pt;
+    width: 15%;
+	border: none;
+	/* border-radius: 3px; */
+	padding: 10px 20px;
+	border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Exo 2';
+    /* margin-top: 69px; */
+}
+.classworker input:hover{
+    background:#22cc22;
+    transition: all 1s;
+}

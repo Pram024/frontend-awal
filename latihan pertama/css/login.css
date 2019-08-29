@@ -1,0 +1,115 @@
+
+body{
+	font-family: sans-serif;
+	background: url(../asset/bglogin.png)no-repeat center center fixed;
+	font-family: 'Exo 2';
+	background-size: auto;
+}
+
+h1{
+	text-align: center;
+	/*ketebalan font*/
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	margin-top: 60px;
+}
+
+.tulisan_login{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+}
+
+.kotak_login {
+	width: 350px;
+	background: white;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+    padding: 30px 20px;
+	border-radius: 20px;
+}
+.form_login:focus {
+	outline:0;
+}
+input{
+	border: none;
+    border-bottom: 1px solid black;
+}
+label{
+	font-size: 11pt;
+}
+
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+
+}
+
+.tombol_login{
+	background: #7a7a7a;
+	color: rgb(255, 255, 255);
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+	border-radius: 50px;
+	font-family: 'Exo 2';
+	cursor: pointer;
+}
+.tombol_login:hover{
+    background:#22cc22;
+	transition: all 1s;
+}
+.link{
+	color: #232323;
+	text-decoration: none;
+	font-size: 10pt;
+	cursor: pointer;
+}
+/* -----------------------------------------------------REGISTER------------------------------------------------- */
+.tombol_register{
+	background: #7a7a7a;
+	color: rgb(255, 254, 254);
+	font-size: 11pt;
+	width: 70%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+	border-radius: 50px;
+	margin-left: 50px;
+	font-family: 'Exo 2';
+	cursor: pointer;
+
+}
+.tombol_register:hover{
+    background:#22cc22;
+	transition: all 1s;
+}
+
+div .back{
+	background: #7a7a7a;
+	color: rgb(255, 255, 255);
+	font-size: 8pt;
+	width: 70%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 10px;
+	border-radius: 50px;
+	margin-left: 146px;
+	text-decoration: none;
+	cursor: pointer;
+	
+}
+div .back:hover{
+    background:#bd371f9d;
+	transition: all 1s;
+}
+
+div i{
+	align-items: center;
+}

@@ -1,0 +1,20 @@
+div.container{
+    background:#4e4a4a;
+    padding: 10px 20px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center
+}
+div.container div{
+    background:#d30000;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    margin: 25px;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
