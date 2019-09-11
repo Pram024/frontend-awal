@@ -184,7 +184,7 @@ function getClasses(){
             console.log(errornya)
         },
         complete: function(){
-            alert('Selamat datang di kelasroom')
+            // alert('Selamat datang di kelasroom')
         }
     })
 }

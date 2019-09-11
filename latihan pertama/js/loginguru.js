@@ -4,7 +4,7 @@ function login(){
     console.log(usernamenya)
     console.log(passwordnya)
     $.ajax({
-        url: "http://127.0.0.1:5003/loginsiswa",
+        url: "http://127.0.0.1:5003/loginguru",
         method: "POST",
         
         contentType: 'application/JSON',
@@ -13,7 +13,7 @@ function login(){
             password: passwordnya
         }),
         success: function (response) {
-            createCookie("userId", response.id_siswa,1)
+            createCookie("userId", response.id_guru,1)
             alert(response.message)
             window.location.href = 'templates/beranda.html'
         },

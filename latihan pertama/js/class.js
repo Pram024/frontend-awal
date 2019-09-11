@@ -58,6 +58,7 @@ function assignClassWork(id){
             alert("isi dengan benar")
         },
     })
+    $('textarea#' + id).empty()
 }
 function getCookie(name) {
     var nameEQ = name + "=";

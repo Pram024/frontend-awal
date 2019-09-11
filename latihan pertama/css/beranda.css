@@ -33,11 +33,10 @@ nav{
   .sidenav a:hover {
     color: #797979;
   }
+  .google{
+      font-size: 25px;
 
-  /* @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  } */
+  }
 div.iconkiri{
     margin-top: 3px;
     font-size: 20px
@@ -108,3 +107,25 @@ div.list1{
 /* .list1 div{
 align-content: center
 } */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media screen and (max-widtht: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 1px;}
+  }
+  @media screen and (max-width: 500px) {
+   .google{font-size: 22px;}
+   div.container{ margin-left: auto; margin-right: auto;}
+   div.list1{margin-left: 0px;}
+  }

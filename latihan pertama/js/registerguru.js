@@ -14,7 +14,7 @@ function register(){
     console.log(no_tlpnya)
     
     $.ajax({
-        url: "http://127.0.0.1:5003/registers",
+        url: "http://127.0.0.1:5003/registerguru",
         method: "POST",
         
         contentType: 'application/JSON',
@@ -28,7 +28,7 @@ function register(){
         }),
         success: function (response) {
             alert(response.message)
-            window.location.href = '../index.html'
+            window.location.href = 'loginGuru.html'
         },
         error: function(errornya){
             alert("isi dengan benar")

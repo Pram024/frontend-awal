@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Exo 2';
     background-color: rgb(235, 235, 235)
@@ -65,17 +69,14 @@ div.iconmen img{
 div.bpkcontainer{
     /* background-color: black; */
     height: auto;
-    margin-left: 50px;
-    margin-right: 50px;
     /* display: flex */
 }
 div.container{
     /* background-color: aqua; */
     display: flex;
-    margin-left: 91px;
-    margin-right: 116px;
     margin-top: 5px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 /* div.blnk{   
     background-image: url(../asset/class.png);
@@ -88,7 +89,6 @@ div.list1{
     /* border-style: solid; */
     width: 1100px;
     height: 209px;
-    margin-left: 25px;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
@@ -110,17 +110,18 @@ div.list1{
  margin-top: 0;
 }
 .mid{
+    /* margin: auto; */
     border-radius: 10px;
     padding: 10px;
     /* border-style: groove; */
-    margin-left: 104px;
     margin-top: 22px;
     display: flex;
-    width: 1000px;
+    width: 100vw;
+    justify-content: center;
 }
 .boxkiri{
     width: 17%;
-    /* height: 100%; */
+    height: 100%;
     /* border: 1pxSSSS solid black; */
     border-radius: 10px;
     padding: 10px;
@@ -130,7 +131,6 @@ div.list1{
     margin-left: 79px;
 }
 .coment{
-    margin-left: auto;
     width: 75%;
     height: 110px;
     border-radius: 10px;
@@ -147,11 +147,11 @@ div.list1{
     border-bottom: 1px solid black;
     transition: width .80s ease-in-out, height .80s ease-in-out;
 }
-.coment textarea:focus{
+/* .coment textarea:focus{
     width: 55%;
     height: 50px;
     outline: 0;
-}
+} */
 .coment input{
     background: #7a7a7a;
 	color: rgb(255, 255, 255);
@@ -172,36 +172,28 @@ div.list1{
 /* -------------------------CLASSWORK------------------
  */
  .classworker{
-    margin-left: 336px;
-    margin-right: 118px;
+ 
     border-style: groove;
     border-radius: 10px;
     height: 250px;
     padding: 10px;
     margin-top: 10px;
+    width: 1100px;
  }
 
  .classworker a{
      font-size: 30px;
  }
  .classworker textarea{
-    height: 100px;
-    width: 450px;
     background-color: #d8d8d8;
     border: none;
     border-bottom: 1px solid black;
-    transition: width .80s ease-in-out, height .80s ease-in-out;;
- }
- .classworker textarea:focus{
-    height: 147px;
-    width: 741px;
-    outline: 0;
  }
  .classworker input{
     background: #7a7a7a;
 	color: rgb(255, 255, 255);
     font-size: 6pt;
-    width: 15%;
+    /* width: 15%; */
 	border: none;
 	/* border-radius: 3px; */
 	padding: 10px 20px;
@@ -213,4 +205,33 @@ div.list1{
 .classworker input:hover{
     background:#22cc22;
     transition: all 1s;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media screen and (max-width: 500px) {
+    .col-1 {width: 100%;}
+    .col-2 {width: 100%;}
+    .col-3 {width: 100%;}
+    .col-4 {width: 100%;}
+    .col-5 {width: 100%;}
+    .col-6 {width: 100%;}
+    .col-7 {width: 100%;}
+    .col-8 {width: 100%;}
+    .col-9 {width: 100%;}
+    .col-10 {width: 100%;}
+    .col-11 {width: 100%;}
+    .col-12 {width: 100%;}
+     .mid{display: block;}
+     .classworker{width: 100%}
 }
