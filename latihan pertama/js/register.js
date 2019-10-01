@@ -27,7 +27,7 @@ function register(){
             no_tlp: no_tlpnya
         }),
         success: function (response) {
-            alert(response.message)
+            alert("Register Sebagai Siswa Berhasil. Silahkan Login")
             window.location.href = '../index.html'
         },
         error: function(errornya){

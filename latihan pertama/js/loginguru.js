@@ -15,7 +15,7 @@ function login(){
         success: function (response) {
             createCookie("userId", response.id_guru,1)
             alert(response.message)
-            window.location.href = 'templates/beranda.html'
+            window.location.href = 'berandaGuru.html'
         },
         error: function(errornya){
             alert(errornya.responseJSON.message);

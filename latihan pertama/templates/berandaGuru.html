@@ -14,7 +14,6 @@
         <!-- style="display:none" -->
     <div class="sidenav"  id="mySidebar">
         <a href="beranda.html" >Beranda</a>
-        <a href="kelasku.html" >KelasKu</a>
         <a href="../index.html" >Logout</a>
       </div>
     <nav> 
@@ -28,42 +27,44 @@
             <span style="color: mediumblue; " >g</span>
             <span style="color: rgb(6, 168, 14); " >l</span>
             <span style="color: rgb(230, 43, 43); " >e</span>
-            <span style="color: black; ;"> Classroom</span>
+            <span style="color: black; ;"> Classroom Teacher</span>
             </div>
             <!-- <div class="iconplus" title="Tambah Kelas"> 
                 <i class="fa fa-plus" aria-hidden="true"></i>
             </div> -->
 
             <div class="iconmin" style="margin-left: auto" >
-                <i class="fa fa-th" aria-hidden="true"></i>
+                <a href="#popup"><i class="fa fa-plus" aria-hidden="true" title="tambah kelas baru"></i></a>
             </div> 
             <div class="namanya">
                 
-            </div>
-            <div class="iconplus" > 
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+            <div class="iconplus"> 
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </div>
     </nav>
     <hr>
-    <div class="container" onclick="closeside()" >
-        <!-- <div class="list1">
-            <div class="juduldiv"><span style="color: black; font-family: Verdana,Arial,Helvetica,Georgia; font-size: 20px;"><a href="page1.html">Makers Academy</a></span></div>
-            <p>Andri Pramana</p>
-            <div><img src="../asset/images.jpg" alt=""height="100px"></div>
-        </div> -->
-        <!-- <div class="list1">
-            <div class="blnk">
-                <div class="juduldiv"><span style="color: black; font-family: Verdana,Arial,Helvetica,Georgia; font-size: 20px;">Kelas Fotografi</span></div>
-                <p>Pramono</p>
-                <img src="../asset/lumixg9.jpg" alt=""height="70px">
-            </div>
-            <div> -->
-                <!-- <img src="../asset/lumixg9.jpg" alt=""height="100px"> -->
-            </div>
+    <div class="container" onclick="closeside()">
+    </div>
+        <div class="popup-wrapper" id="popup">
+        <div class="popup-container">
+            <form class="popup-form">
+                <h2>Silahkan masukan nama kelas</h2>
+                <p>masukan nama kelas yang mudah di ingat<br/>
+                <div class="input-group">
+                    <p><input id="class_name" type="text" placeholder="Nama Kelas"></p>
+                    <p> 
+                        <a href="#closed"><input type="submit" value="Submit" name="jetpack_subscriptions_widget" onclick="registerKelas()"></a>
+                    </p>
+                </div>
+                <a class="popup-close" href="#closed">X</a>
+            </form>
+        </div>
+    </div>  
     <script
     src="../js/jquery.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script src="../js/beranda.js"></script>
+    <script src="../js/berandaguru.js"></script>
 </body>
 </html>

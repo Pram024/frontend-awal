@@ -27,7 +27,7 @@ function register(){
             no_tlp: no_tlpnya
         }),
         success: function (response) {
-            alert(response.message)
+            alert("Register Sebagai Guru Berhasil. Silahkan Login")
             window.location.href = 'loginGuru.html'
         },
         error: function(errornya){

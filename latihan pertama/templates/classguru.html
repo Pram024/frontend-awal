@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KELASRUM</title>
+    <link rel="stylesheet" href="../css/class.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../asset/logobiru.jpg">
+</head>
+<body>
+        <div class="sidenav"  id="mySidebar">
+                <a href="berandaGuru.html" >Beranda</a>
+                <a href="../index.html" >Logout</a>
+              </div>
+            <nav> 
+        <div class="iconkiri" onclick="openside()" >
+            <i class="fa fa-bars" aria-hidden="true"><a href=""></a></i>
+        </div>  
+        <div class="google" > 
+            <span style="color: mediumblue; font-size: 25px" >G</span>
+            <span style="color: red; font-size: 25px">o</span>
+            <span style="color: rgb(236, 253, 0); font-size: 25px">o</span>
+            <span style="color: mediumblue; font-size: 25px" >g</span>
+            <span style="color: rgb(6, 168, 14); font-size: 25px" >l</span>
+            <span style="color: rgb(230, 43, 43); font-size: 25px" >e</span>
+            <span style="color: black; font-family: Verdana,Arial,Helvetica,Georgia; font-size: 25px;"> Classroom</span> 
+            </div>
+            <div class="iconmin" style="margin-left: auto" >
+                <a href="#popup"><i class="fa fa-plus" aria-hidden="true" title="tambah kelas baru"></i></a>
+            </div>  
+            <div class="iconplus" > 
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+    </nav>
+    <hr>
+    <div class="bpkcontainer">
+        <div class="container" onclick="closeside()">
+        
+        </div>
+        <div class="listnama">
+            <h4>murid yang mengikuti kelas ini</h4>
+        </div>
+        <div class="listnama2">
+            <!-- <ul>
+                <li>murid1</li>
+            </ul>
+            <ul>
+                <li>murid1</li>
+            </ul>
+            <ul>
+                <li>murid1</li>
+            </ul> -->
+        </div>
+        <div class="listnama">
+            <h4>Tugas yang anda berikan</h4>
+        </div>
+        <div class="soalnyaguru">
+                <!-- <div class="tugasguru">
+                        <div><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+                        <div class="soalguru"><b>Soal:</b> ini soal dari guru tersayang</div>
+                        <div class="answernya"><b>Jawaban:</b> ini answer dari guru tersayang</div>
+                    </div> -->
+        </div>
+        </div> 
+        <div class="popup-wrapper" id="popup">
+            <div class="popup-container">
+                <form class="popup-form">
+                    <h2>Input Soal</h2>
+                    <p>Masukan soal yang akan diberikan kepada murid dan bagian bawah untuk jawaban dari soal anda<br/>
+                    <div class="input-group">
+                        <p><input id="question" type="text" placeholder="Tuliskan Soal disini.."></p>
+                        <p><input id="answer" type="text" placeholder="Tulisan Jawabannya disini.."></p>
+                        <p> 
+                        <input type="submit" value="Submit" onclick="registerTugas()">
+                        </p>
+                    </div>
+                    <a class="popup-close" href="#closed">X</a>
+                </form>
+            </div>
+        </div>   
+    <script
+    src="../js/jquery.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="../js/classguru.js"></script>
+</body>
+</html>
+
+ 
